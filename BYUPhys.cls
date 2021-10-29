@@ -90,6 +90,9 @@
 % The name of the committee member 5
 \newcommand{\MemberD}[1]{\gdef\@MemberD{#1}}
 
+% The name of the thesis coordinator
+\newcommand{\ThesisCoordinator}[1]{\gdef\@ThesisCoordinator{#1}}
+
 % The name of the department chair
 \newcommand{\DepRep}[1]{\gdef\@DepRep{#1}}
 
@@ -123,6 +126,7 @@
   \MemberB{Committee Member B}
   \MemberC{Committee Member C}
   \MemberD{Committee Member D}
+  \ThesisCoordinator{Thesis Coordinator}
   \DepRep{Department Chair Name}
   \DepRepTitle{Chair}
   \Dean{Dean Name}
@@ -479,6 +483,7 @@
     \datebox\hfill\signaturebox{\@Advisor, Advisor}\\
     \datebox\hfill\signaturebox{\@MemberA, Committee Member}\\
     \datebox\hfill\signaturebox{\@MemberB, Committee Member}\\
+    \datebox\hfill\signaturebox{\@ThesisCoordinator, Thesis Coordinator}\\
     \datebox\hfill\signaturebox{\@DepRep, \@DepRepTitle}\\
     \vfill
     \clearemptydoublepage
