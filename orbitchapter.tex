@@ -101,15 +101,25 @@ $$\frac{d\overrightarrow{r}}{dt}\cdot \hat{r}=\frac{dr}{dt}$$
 
 and we recognize 
 
-$$\overrightarrow{v}=\frac{d\overrightarrow{r}}{dt}$$
+\begin{equation*}
+	\overrightarrow{v}=\frac{d\overrightarrow{r}}{dt}
+\end{equation*}%
+so we can write 
+\begin{equation}
+	\overrightarrow{v}\cdot \hat{r}=\frac{dr}{dt}  \label{vdotrhat}
+\end{equation}%
+and we have this in our orbit equation. Our orbit equation becomes
 
-so we can write our orbit equation as%
+\begin{equation*}
+	m_{s}\overrightarrow{v}\cdot \overrightarrow{a}+m_{s}\left( G\frac{M_{E}}{%
+		r_{Es}^{2}}\right) \frac{d\overrightarrow{r}}{dt}\cdot \hat{r}=0
+\end{equation*}%
+or just
 
-$$m_{s}\overrightarrow{v}\cdot \overrightarrow{a}+m_{s}\left( G\frac{M_{E}}{r_{Es}^{2}}\right) \frac{d\overrightarrow{r}}{dt}\cdot \hat{r}=0$$
-
-or even 
-
-$$m_{s}\overrightarrow{v}\cdot \overrightarrow{a}+m_{s}\left( G\frac{M_{E}}{r^{2}}\right) \frac{dr}{dt}=0$$
+\begin{equation*}
+	m_{s}\overrightarrow{v}\cdot \overrightarrow{a}+m_{s}\left( G\frac{M_{E}}{%
+		r^{2}}\right) \frac{dr}{dt}=0
+\end{equation*}
 
 We can do something similar for the first term We can recognize 
 
@@ -251,198 +261,139 @@ and, hurray! we have conservation of angular momentum for our general orbit!
 
 
 \section{Conic Section Equation}
-
-
-You may not be a thrilled as I\ was at this point, but what we have done is
-
-typical for physicists. We use the power of mathematics and some ingenuity
-
-to predict what motions will be. You might say, \textquotedblleft but I\
-
-would never think of taking cross and dot products seemingly randomly to
-
-find a result.\textquotedblright\ This may be true now, but as you get used
-
-to using the mathematical tools an operation like this may become more
-
-obvious. In any case, recall that early physicists spent many years trying
-
-out ways to use their mathematical tools. So eventually someone was bound to
-
-try our cross and dot product tricks. But we have only shown conservation of
-
-energy and angular momentum. We have not reached our goal. So let's return
-
-to our basic motion equation that we started with%
-
-$$-m_{s}\overrightarrow{a}-m_{s}\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}=0 $$
-
-and add to it our equation for angular momentum 
-
-$$\overrightarrow{L}=\overrightarrow{r}\times m_{s}\overrightarrow{v}$$
-
-and form the cross product of the two%
-
-$$\left( -m_{s}\overrightarrow{a}-m_{s}\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}\right) \times \overrightarrow{L}=0\times \overrightarrow{L}$$
-
-$$m_{s}\overrightarrow{a}\times \overrightarrow{L}+m_{s}\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}\times \overrightarrow{L}=0 $$
-
-Again this may not seem like an obvious thing to do! But we find that 
-
-$$m_{s}\overrightarrow{a}\times \overrightarrow{L}=-\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}\times \overrightarrow{L}$$
-
-and it is time for another mathematical trick. Consider the quantity%
-
-$$\frac{d}{dt}\left( \overrightarrow{v}\times \overrightarrow{L}\right) =\overrightarrow{v}\times \frac{d\overrightarrow{L}}{dt}+\frac{d\overrightarrow{v}}{dt}\times \overrightarrow{L}$$
-
-$$=\overrightarrow{v}\times \frac{d}{dt}\left( \overrightarrow{r}\times m_{s}\overrightarrow{v}\right) +\overrightarrow{a}\times \overrightarrow{L}$$
-
-$$=\overrightarrow{v}\times \left( 0\right) +\overrightarrow{a}\times \overrightarrow{L}$$
-
-$$=\overrightarrow{a}\times \overrightarrow{L}$$
-
+You may not be a thrilled as I\ was at this point, but what we have done is typical for physicists. We use the power of mathematics and some ingenuity to predict what motions will be. You might say, \textquotedblleft but I\  would never think of taking cross and dot products seemingly randomly to find a result.\textquotedblright\ This may be true now, but as you get used to using the mathematical tools an operation like this may become more obvious. In any case, recall that early physicists spent many years trying out ways to use their mathematical tools. So eventually someone was bound to try our cross and dot product tricks. But we have only shown conservation of energy and angular momentum. We have not reached our goal. So let's return to our basic motion equation that we started with 
+\begin{equation*}
+	-m_{s}\overrightarrow{a}-m_{s}\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}=0 
+\end{equation*}
+and now let's consider our equation for angular momentum
+\begin{equation*}
+	\overrightarrow{L}=\overrightarrow{r}\times m_{s}\overrightarrow{v}
+\end{equation*}
+and form the cross product of the first equation with $\overrightarrow{L}$
+\begin{equation*}
+	\left( -m_{s}\overrightarrow{a}-m_{s}\left( G\frac{M_{E}}{r^{2}}\right) \hat{%
+		r}\right) \times \overrightarrow{L}=0\times \overrightarrow{L}
+\end{equation*}
+\begin{equation*}
+	m_{s}\overrightarrow{a}\times \overrightarrow{L}+m_{s}\left( G\frac{M_{E}}{%
+		r^{2}}\right) \hat{r}\times \overrightarrow{L}=0 
+\end{equation*}
+Again this may not seem like an obvious thing to do! But we find that
+\begin{equation*}
+	m_{s}\overrightarrow{a}\times \overrightarrow{L}=-\left( G\frac{M_{E}}{r^{2}}%
+	\right) \hat{r}\times \overrightarrow{L}
+\end{equation*}
+and it is time for another mathematical trick. Consider the quantity
+\begin{equation*}
+	\frac{d}{dt}\left( \overrightarrow{v}\times \overrightarrow{L}\right) =%
+	\overrightarrow{v}\times \frac{d\overrightarrow{L}}{dt}+\frac{d%
+		\overrightarrow{v}}{dt}\times \overrightarrow{L}
+\end{equation*}
+\begin{equation*}
+	=\overrightarrow{v}\times \frac{d}{dt}\left( \overrightarrow{r}\times m_{s}%
+	\overrightarrow{v}\right) +\overrightarrow{a}\times \overrightarrow{L}
+\end{equation*}
+\begin{equation*}
+	=\overrightarrow{v}\times \left( 0\right) +\overrightarrow{a}\times 
+	\overrightarrow{L}
+\end{equation*}
+\begin{equation*}
+	=\overrightarrow{a}\times \overrightarrow{L}
+\end{equation*}
 for our situation because we have already shown that angular momentum is
-
-conserved. So we have 
-
-$$m_{s}\frac{d}{dt}\left( \overrightarrow{v}\times \overrightarrow{L}\right)=-\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}\times \overrightarrow{L}$$
-
-
-Now let's look at the right hand side. Writing out the angular momentum
-
-gives 
-
-$$\hat{r}\times \overrightarrow{L}=\hat{r}\times \left( \overrightarrow{r}\times m_{s}\overrightarrow{v}\right) $$
-
-and I will use a vector product identity that I\ will let the math
-
-department teach you
-
-$$\overrightarrow{A}\times \left( \overrightarrow{B}\times \overrightarrow{C}\right) =\overrightarrow{B}\left( \overrightarrow{A}\cdot \overrightarrow{C}\right) -\overrightarrow{C}\left( \overrightarrow{A}\cdot \overrightarrow{B}\right) $$
-
-so for us 
-
-$$\overrightarrow{r}\times \overrightarrow{L}=m_{s}\overrightarrow{r}\times\left( \overrightarrow{r}\times \overrightarrow{v}\right) $$
-
-$$=m_{s}\left( \overrightarrow{r}\left( \overrightarrow{r}\cdot \overrightarrow{v}\right) -\overrightarrow{v}\left( \overrightarrow{r}\cdot \overrightarrow{r}\right) \right) $$
-
-$$=m_{s}\left( \overrightarrow{r}\left( \overrightarrow{r}\cdot \overrightarrow{v}\right) -\overrightarrow{v}r^{2}\right) $$
-
-
-We already know that $\hat{r}\cdot \overrightarrow{v}=rdr/dv$ so 
-
+conserved. So we have
+\begin{equation*}
+	m_{s}\frac{d}{dt}\left( \overrightarrow{v}\times \overrightarrow{L}%
+	\right)=-\left( G\frac{M_{E}}{r^{2}}\right) \hat{r}\times \overrightarrow{L}
+\end{equation*}
+Now let's look at the right hand side. Writing out the angular momentum gives
+\begin{equation*}
+	\hat{r}\times \overrightarrow{L}=\hat{r}\times \left( \overrightarrow{r}%
+	\times m_{s}\overrightarrow{v}\right) 
+\end{equation*}
+and I will use a vector product identity that I\ will let the math department teach you
+\begin{equation*}
+	\overrightarrow{A}\times \left( \overrightarrow{B}\times \overrightarrow{C}%
+	\right) =\overrightarrow{B}\left( \overrightarrow{A}\cdot \overrightarrow{C}%
+	\right) -\overrightarrow{C}\left( \overrightarrow{A}\cdot \overrightarrow{B}%
+	\right) 
+\end{equation*}%
+so for us
+\begin{equation*}
+	\overrightarrow{r}\times \overrightarrow{L}=m_{s}\hat{r}\times \left( 
+	\overrightarrow{r}\times \overrightarrow{v}\right) 
+\end{equation*}%
+\begin{equation*}
+	=m_{s}\left( \overrightarrow{r}\left( \hat{r}\cdot \overrightarrow{v}\right)
+	-\overrightarrow{v}\left( \hat{r}\cdot \overrightarrow{r}\right) \right) 
+\end{equation*}%
+\begin{equation*}
+	=m_{s}\left( \overrightarrow{r}\left( \hat{r}\cdot \overrightarrow{v}\right)
+	-\overrightarrow{v}r\right) 
+\end{equation*}%
+We already know from equation (\ref{vdotrhat}) that%
+\begin{equation*}
+	\overrightarrow{v}\cdot \hat{r}=\frac{dr}{dt}
+\end{equation*}%
+then 
 $$\hat{r}\times \overrightarrow{L}=m_{s}\left( r\hat{r}\left( r\frac{dr}{dv}\right) -\overrightarrow{v}r^{2}\right) $$
-
 then finally 
-
 $$ m_{s}\frac{d}{dt}\left( \overrightarrow{v}\times \overrightarrow{L}\right)=-\left( G\frac{M_{E}m_{s}}{r^{2}}\right) \left( r^{2}\left( \frac{dr}{dv}\right) \hat{r}-\overrightarrow{v}r^{2}\right) 
 $$
-
 $$=-\left( GM_{E}m_{s}\right) \left[ \left( \frac{dr}{dv}\right) \frac{\hat{r}}{r}-\frac{\overrightarrow{v}}{r}\right] $$
-
-
-Let's employ one more mathematical trick%
-
+Let's employ one more mathematical trick
 $$\frac{d}{dt}\left( \frac{\overrightarrow{r}}{r}\right) =-\overrightarrow{r} \frac{1}{r^{2}}\frac{dr}{dt}+\frac{1}{r}\frac{d\overrightarrow{r}}{dt}
 $$
-
 $$=-\overrightarrow{r}\frac{1}{r^{2}}\frac{dr}{dt}+\frac{1}{r}\overrightarrow{v}
 $$
-
 $$=-\left( \hat{r}\frac{1}{r}\frac{dr}{dt}-\frac{1}{r}\overrightarrow{v}\right)$$
-
-and this is the part of our equation that I\ wrote in square brackets, so
-
-with a substitution our equation becomes%
-
+and this is the part of our equation that I\ wrote in square brackets, so with a substitution our equation becomes
 $$m_{s}\frac{d}{dt}\left( \overrightarrow{v}\times \overrightarrow{L}\right)=\left( GM_{E}m_{s}\right) \left( \frac{d}{dt}\left( \frac{\overrightarrow{r}}{r}\right) \right) $$
-
-or, canceling the $dt$ factors from both sides%
-
+or, canceling the $dt$ factors from both sides
 $$m_{s}d\left( \overrightarrow{v}\times \overrightarrow{L}\right) =\left(GM_{E}m_{s}\right) \left( d\left( \frac{\overrightarrow{r}}{r}\right)\right)
 $$
-
-and we can integrate both sides%
-
+and we can integrate both sides
 $$m_{s}\int d\left( \overrightarrow{v}\times \overrightarrow{L}\right)=-\left( GM_{E}m_{s}\right) \int \left( d\left( \frac{\overrightarrow{r}}{r}\right) \right)
 $$
-
 to find 
-
 $$m_{s}\overrightarrow{v}\times \overrightarrow{L}=\left( GM_{E}m_{s}\right)\left( \frac{\overrightarrow{r}}{r}\right) +\overrightarrow{B}
 $$
-
-where $\overrightarrow{B}$ is a vector constant of integration.
-
-
-Once again for no apparent reason let's take the dot product of this
-
-equation with $\overrightarrow{r}$%
-
+where $\overrightarrow{B}$ is a vector constant of integration. Once again for no apparent reason let's take the dot product of this equation with $\overrightarrow{r}$
 $$\overrightarrow{r}\cdot \left( m_{s}\overrightarrow{v}\times \overrightarrow{L}\right) =-\left( GM_{E}m_{s}\right) \overrightarrow{r}\cdot \left( \frac{\overrightarrow{r}}{r}\right) +\overrightarrow{r}\cdot \overrightarrow{B} 
 $$
-
-and use another vector product identity%
-
+and use another vector product identity
 $$\overrightarrow{A}\cdot \overrightarrow{B}\times \overrightarrow{C}=\overrightarrow{A}\times \overrightarrow{B}\cdot \overrightarrow{C} 
 $$
-
 We can write this as to write our dot product equation as 
-
 $$\left( m_{s}\overrightarrow{r}\times \overrightarrow{v}\right) \cdot \overrightarrow{L}=\left( GM_{E}m_{s}\right) r+rB\cos \theta _{rB} 
 $$
-
 or
-
 $$\frac{1}{m_{s}}\left( \overrightarrow{r}\times m_{s}\overrightarrow{v}\right) \cdot \overrightarrow{L}=\left( GM_{E}m_{s}\right) r+rB\cos \theta_{rB}
 $$
-
 $$\left( \overrightarrow{r}\times m_{s}\overrightarrow{v}\right) \cdot \overrightarrow{L}=\left( GM_{E}m_{s}\right) r+rB\cos \theta _{rB} 
 $$
-
 $$\overrightarrow{L}\cdot \overrightarrow{L}=\left( GM_{E}m_{s}\right)r+rB\cos \theta _{rB} 
 $$
-
 $$L^{2}=\left( GM_{E}m_{s}\right) r+rB\cos \theta _{rB} 
 $$
-
-and now we can solve for $r$%
-
+and now we can solve for $r$
 $$L^{2}=r\left( \left( GM_{E}m_{s}\right) +B\cos \theta _{rB}\right) 
 $$
-
 then 
 
 $$r=\frac{L^{2}}{\left( \left( GM_{E}m_{s}\right) +B\cos \theta _{rB}\right) } 
 $$
-
 or, rearranging slightly, 
-
 $$r=\frac{L^{2}/\left( GM_{E}m_{s}\right) }{\left( 1+\left(B/GM_{E}m_{s}\right) \cos \theta _{rB}\right) } $$
-
 If we compare this to the parametric equation for a conic section (straight out of your calculus text book), 
-
 $$r=\frac{p}{1+e\cos \nu } $$
-
 we can see that our orbit must be a conic section with a semi-latus rectum, 
-
 $$p=L^{2}/\left( GM_{E}m_{s}\right) $$
-
 and an eccentricity, 
- 
 $$e=B/GM_{E}m_{s}$$
-
 and an angle 
-
 $$\nu =\theta _{rB}$$
+This means our orbit could be any conic section, circle, ellipse, parabola, or hyperbola. For satellites we most often choose ellipses. But the other conic sections are possible.So Kepler was partially right. An ellipse is a general form for an orbit, but it might even be better to write Kepler's law to say that orbits are conic sections.
 
-This means our orbit could be any conic section, circle, ellipse, parabola, or hyperbola.
-
-For satellites we most often choose ellipses. But the other conic sections are possible.
-
-So Kepler was partially right. An ellipse is a general form for an orbit, but it might even be better to write Kepler's law to say that orbits are conic sections.
-
-
-If you are a normal PH121 student, your reaction to this problem might be \textquotedblleft Agh, maybe I should change my major to
-horticulture!\textquotedblright\ But don't worry, This was really a junior level problem, and for us physics majors we have many classes (both physics and math classes) to take before we would be expected to do a problem like this. Still it is fun to see that we \emph{can} do a problem like this with the math we learned in lowly PH121 if we are very persistent!  Interested students can read more in the the book \textit{Fundamentals of Astrodynamics} by Bate \textit{et. al.} \cite{Bate1971}\cite{ExplainingComputers2021}\cite{byuiphysics}\cite{Acquista76}
+If you are a normal PH121 student, your reaction to this problem might be \textquotedblleft Agh, maybe I should change my major to horticulture!\textquotedblright\ But don't worry, This was really a junior level problem, and for us physics majors we have many classes (both physics and math classes) to take before we would be expected to do a problem like this. Still it is fun to see that we \emph{can} do a problem like this with the math we learned in lowly PH121 if we are very persistent!  Interested students can read more in the the book \textit{Fundamentals of Astrodynamics} by Bate \textit{et. al.} \cite{Bate1971}\cite{ExplainingComputers2021}\cite{byuiphysics}\cite{Acquista76}
 	
