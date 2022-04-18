@@ -3,8 +3,9 @@
 
 You might want to include some code in your thesis. This is done with a verbatim environment so \LaTeX \enspace doesn't try to interpret the code as \LaTeX \enspace commands. I want to make sure the code fits on the page, so I am going to reduce the font size with a small environment as well. 
 \begin{small}
-
-	
+\begingroup
+\makeatletter
+\@totalleftmargin=-1cm
 	\begin{verbatim}
 		##############################################################
 		# second order Runga Cutta for a projectile with expansion   #
@@ -191,6 +192,7 @@ You might want to include some code in your thesis. This is done with a verbatim
 
 	
 	\end{verbatim}
+\endgroup
 	
 \end{small}
 
