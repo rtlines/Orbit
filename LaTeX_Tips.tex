@@ -40,15 +40,42 @@ Sometimes it is useful to have two figures side by side. One way to do this is w
 			result, the dotted curve is the T-matrix result for comparison. 
 			There were 32 $k$-vectors evenly distributed in $\protect\theta$ 
 			and $\protect\phi.$
-		    }
+	     	\label{fig:bigsphere1}
+		}
 	\end{minipage}%
 	\begin{minipage}{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, height=0.35\textheight]{test70}
 		\caption{Scattering From a Larger Sphere: The sphere has $a=4.77$ $\protect\mu m,$ and $\protect\lambda =10$ $\protect\mu m$. Only the horizontal polarization is shown. The heavy solid curve is the Mie result. The remaining curves give VGF results for 408, 1184, 2632, and 8360 cells. \thinspace The unweighted cell size, $d$, ranges from $1.193$ $\protect\mu m$ to $0.398$ $\protect\mu m.$ There were 32 $k$-vectors evenly distributed in $\protect\theta $ and $\protect\phi.$ \vspace{0.8in}}
-		\label{fig:bigsphere}
+		\label{fig:bigsphere2}
 	\end{minipage}
 \end{figure}
-You might want to have different figures all as part of a larger figure. I recommend making the graphics as all one piece.  For example:
-
+You might want to have different figures all as part of a larger figure. I recommend making the graphics as all one piece.  For example see figure \ref{fig:bigsphere1} and \ref{fig:bigsphere2}.
+\section{defining new math operators}
+This can be done with the following commands
+\begin {verbatim}
+   \DeclareMathOperator {\myOp}{myOp}
+   \myOp(x)
+\end{verbatim}
+The first line needs to be in the preamble of your document. The second is put into math where you want the new operator to apperar. Then when you use the new operator it looks like this
+$$\myOp(x)$$
+Let's try this with erfc for the error function. Then we want to add 
+\begin {verbatim}
+\DeclareMathOperator {\erfc}{erfc}
+\end{verbatim}
+to the preamble and 
+\begin {verbatim}
+\erfc(x)
+\end{verbatim} 
+to the text where we want it.  It should look like this
+$$\erfc(x)$$
+or in the text $\erfc(x)$.
+You might also want to put normal text in an equation. Like 
+$$ \frac{x^2+distance^2}{r^2}$$
+Note that the word ``distance'' doesn't look right. Using the 
+\begin {verbatim}
+   \textrm{normal text}
+\end{verbatim}
+command fixes this.
+$$ \frac{x^2+\textrm{distance}^2}{r^2}$$.
 

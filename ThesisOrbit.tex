@@ -1,4 +1,4 @@
-\documentclass[oneside,senior]{BYUPhys}
+\documentclass[oneside,senior]{BYUIPhys}
 % The BYUPhys class is for producing theses and dissertations
 % in the BYU Department of Physics and Astronomy.  You can supply
 % the following optional arguments in the square brackets to
@@ -91,6 +91,9 @@
 % If you need chemistry symbols you can use \usepackage{mhchem} to make them. They are made in the following way \ce{ H2O }
 \usepackage{mhchem}
 
+% Attempt to define a new math operator
+\DeclareMathOperator {\myOp}{myOp}
+\DeclareMathOperator {\erfc}{erfc}
 
 % The hyperref package provides automatic linking and bookmarking for the table
 % of contents, index, equation references, and figure references.  It must be
@@ -194,6 +197,7 @@
  %\include{Chapter1}
  %\include{Chapter2}
  %\include{Chapter3}
+ 
  \include{orbitchapter}
  \include{numericalcalculation}
  \include{LaTeX_Tips}
