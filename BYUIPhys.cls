@@ -127,7 +127,7 @@
   \MemberC{Committee Member C}
   \MemberD{Committee Member D}
   \ThesisCoordinator{Thesis Coordinator}
-  \DepRep{Department Chair Name}
+  \DepRep{Department Chair}
   \DepRepTitle{Chair}
   \Dean{Dean Name}
   \DeanTitle{Associate Dean}
@@ -484,7 +484,7 @@
     \datebox\hfill\signaturebox{\@MemberA, Committee Member}\\
     \datebox\hfill\signaturebox{\@MemberB, Committee Member}\\
     \datebox\hfill\signaturebox{\@ThesisCoordinator, Thesis Coordinator}\\
-    \datebox\hfill\signaturebox{\@DepRep, \@DepRepTitle}\\
+    \datebox\hfill\signaturebox{\@DepRep, Department Chair}\\
     \vfill
     \clearemptydoublepage
   }
