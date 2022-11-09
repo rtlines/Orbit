@@ -63,6 +63,9 @@
 % First line of title
 \newcommand{\TitleTop}[1]{\gdef\@TitleTop{\mbox{\uppercase{#1}}}}
 
+% Middle line of title
+\newcommand{\TitleMiddle}[1]{\gdef\@TitleMiddle{\mbox{\uppercase{#1}}}}
+
 % Second line of title
 \newcommand{\TitleBottom}[1]{\gdef\@TitleBottom{\mbox{\uppercase{#1}}}}
 
@@ -116,6 +119,7 @@
   \Month{January}
   \Author{Author}
   \TitleTop{First line of title}
+  \TitleMiddle{ } % default is empty
   \TitleBottom{ } % default is empty
   \Abstract{Abstract text goes here.}
   \Acknowledgments{Acknowledgment text goes here.}
@@ -345,8 +349,9 @@
     \thispagestyle{empty}
     \begin{center}
     \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Title Page}{bm:Title}    
-    \vspace*{0.375in}
+    \vspace*{0.385in}
     \@TitleTop\\[\baselineskip]
+	\@TitleMiddle\\[\baselineskip]
     \@TitleBottom\\
     \vfill
     by\\[\baselineskip]
