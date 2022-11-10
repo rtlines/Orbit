@@ -351,7 +351,7 @@
     \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Title Page}{bm:Title}    
     \vspace*{0.385in}
     \@TitleTop\\[\baselineskip]
-	\@TitleMiddle\\[\baselineskip]
+    \@TitleMiddle\\[\baselineskip]
     \@TitleBottom\\
     \vfill
     by\\[\baselineskip]
@@ -531,6 +531,7 @@
     \vspace*{0.375in}
     ABSTRACT\\[3\baselineskip]
     \@TitleTop\\[\baselineskip]
+    \@TitleMiddle\\[\baselineskip]
     \@TitleBottom\\[3\baselineskip]
     \@Author\\[\baselineskip]
     Department of Physics and Astronomy\\[\baselineskip]
