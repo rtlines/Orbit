@@ -527,7 +527,11 @@
     \thispagestyle{empty}
     \begin{abstractenv}
     \begin{center}
-    \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Abstract}{bm:Abstract}    
+    \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Abstract}{bm:Abstract}  
+    % Richard Hatt wants abstracts on odd pages.  The next command makes LaTeX skip
+    % a page so the abstract is on an odd page if all the rest are on their normal
+    % pages.  But if, for some ood reason, the signature page became two pages
+    % this might need to be adjusted again.
     \clearemptydoublepage
     \vspace*{0.375in}
     ABSTRACT\\[3\baselineskip]
