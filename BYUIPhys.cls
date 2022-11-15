@@ -477,7 +477,7 @@
     \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Department Approval}{bm:DepAp}    
     \vspace*{0.375in}
     BRIGHAM YOUNG UNIVERSITY - IDAHO\\[3\baselineskip]
-    DEPARTMENT APPROVAL\\[5\baselineskip]
+    DEPARTMENT APPROVAL\\[4\baselineskip]
     of a \@docname~submitted by\\[\baselineskip]
     \@Author\\[2\baselineskip]
     \end{center}
@@ -528,13 +528,14 @@
     \begin{abstractenv}
     \begin{center}
     \providecommand\pdfbookmark[3][]{} \pdfbookmark[0]{Abstract}{bm:Abstract}    
+    \clearemptydoublepage
     \vspace*{0.375in}
     ABSTRACT\\[3\baselineskip]
     \@TitleTop\\[\baselineskip]
     \@TitleMiddle\\[\baselineskip]
     \@TitleBottom\\[3\baselineskip]
     \@Author\\[\baselineskip]
-    Department of Physics and Astronomy\\[\baselineskip]
+    Department of Physics\\[\baselineskip]
     \@degree\\[3\baselineskip]
     \end{center}   
     \renewcommand{\baselinestretch}{1.66}\small\normalsize
