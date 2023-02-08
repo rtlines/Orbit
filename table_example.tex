@@ -1,0 +1,59 @@
+
+\documentclass{article}
+\usepackage{array}  % for example 1
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} % for example 1
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}  % for example 1
+%\usepackage[center]{caption}
+
+\begin{document}
+
+Example 1
+Use the array package and define a new column type with horizontal or vertical centering (or both).  
+
+\begin{verbatim}
+	 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+ \end{verbatim} line above. Then in the column definitions in your table replace  the ``p'' with an ``M.'' 
+\begin{table}[h]
+	\centering
+	\begin{tabular}[c]{|M{2.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|} \hline
+		Samples & \multicolumn{2}{|c|}{SQNT base} & \multicolumn{2}{|c|}{SQNT HAZ} & \multicolumn{2}{|c|}{SQNT weld-line}\\ \hline
+		Lifetime ($\tau$)     & 1     & 2     & 1     & 2     & 1     & 2     \\ \hline
+		Average Lifetime (ps) & 116.5 & 464.2 & 114.7 & 404.7 & 115.3 & 414.7 \\ \hline
+		Intensity (\%)        & 69    & 31    & 64.5  & 35.5  & 66.2  & 33.8  \\ \hline
+	\end{tabular}
+	\caption{Positron lifetimes after evaluating spectra with PALSfit3. These spectra were collected with an open sample, the Na-22 placed on top of the sample.}
+	\label{OpenResults}
+\end{table}
+
+Example 2:
+I use this one a lot.  Just put \textbackslash hfil  in each cell you want centered.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}[c]{|p{2.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|} \hline
+		Samples & \multicolumn{2}{|c|}{SQNT base} & \multicolumn{2}{|c|}{SQNT HAZ} & \multicolumn{2}{|c|}{SQNT weld-line}\\ \hline 
+		Lifetime ($\tau$)     & \hfil 1     & \hfil 2     & \hfil 1     & \hfil 2     & \hfil 1     & \hfil 2 \\  \hline
+		Average Lifetime (ps) & \hfil 116.5 & \hfil 464.2 & \hfil 114.7 & \hfil 404.7 & \hfil 115.3 & \hfil 414.7 \\ \hline
+		Intensity (\%)        & \hfil 69    & \hfil 31    & \hfil 64.5  & \hfil 35.5  & \hfil 66.2  & \hfil 33.8 \\ \hline
+	\end{tabular}
+	\caption{Positron lifetimes after evaluating spectra with PALSfit3. These spectra were collected with an open sample, the Na-22 placed on top of the sample.}
+	\label{OpenResults}
+\end{table}
+
+Example 3:
+The last example was a trick.  Maybe a ``better'' way to go is to put \textbackslash centering in the cells you want centered.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}[c]{|p{2.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|} \hline
+		Samples & \multicolumn{2}{|c|}{SQNT base} & \multicolumn{2}{|c|}{SQNT HAZ} & \multicolumn{2}{|c|}{SQNT weld-line} \\ \hline
+		Lifetime ($\tau$)      & 1     & 2     & 1     & 2     & 1     & 2     \\  \hline
+		Average Lifetime (ps)  & 116.5 & 464.2 & 114.7 & 404.7 & 115.3 & 414.7 \\  \hline
+		Intensity (\%)         & 69    & 31    & 64.5  & 35.5  & 66.2  & 33.8  \\  \hline
+	\end{tabular}
+	\caption{Positron lifetimes after evaluating spectra with PALSfit3. These spectra were collected with an open sample, the Na-22 placed on top of the sample.}
+	\label{OpenResults}
+\end{table}
+
+
+\end{document}

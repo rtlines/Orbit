@@ -1,7 +1,42 @@
 \chapter{Including Your Code} \label{AppendixCode}
 \label{app:Talk}
 
-You might want to include some code in your thesis. This is done with a verbatim environment so \LaTeX \enspace doesn't try to interpret the code as \LaTeX \enspace commands. I want to make sure the code fits on the page, so I am going to reduce the font size with a small environment as well. 
+You might want to include some code in your thesis. This is done with a lstlisting environment. Using lstlisting provides syntax highlighting. 
+
+\begin{lstlisting}[language=Python] 
+x=10
+y=x**2
+print('Helo world', y)
+\end{lstlisting}
+
+	\begin{lstlisting}[language=Python]
+	>>> from numpy import *
+	>>> from numpy.fft import *
+	>>> signal = array([-2., 8., -6., 4., 1., 0., 3., 5.])
+	>>> fourier = fft(signal)
+	>>> N = len(signal)
+	>>> timestep = 0.1 # if unit=day -> freq unit=cycles/day
+	>>> freq = fftfreq(N, d=timestep) # freqs corresponding to 'fourier'
+	>>> freq
+	array([ 0. , 1.25, 2.5 , 3.75, -5. , -3.75, -2.5 , -1.25])
+	>>> fftshift(freq) # freqs in ascending order
+	array([-5. , -3.75, -2.5 , -1.25, 0. , 1.25, 2.5 , 3.75])
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python] 
+	int ledPin=13;
+	void setup() {
+		pinMode(ledPin, OUTPUT);
+	}
+	void loop() {
+		digitalWrite(ledPin,HIGH);
+		delay(100);
+		digitalWrite(ledPin,LOW);
+		delay(100);
+	}
+\end{lstlisting}
+
+But if you don't need syntax highlighting (like if you will print in only black and white) you can also use a verbatim environment. In both cases, \LaTeX \enspace doesn't try to interpret your computer program code as \LaTeX \enspace commands. I want to make sure the code fits on the page, so for the verbatum envirnment example I am going to reduce the font size with a small environment as well. 
 \begin{small}
 \begingroup
 \makeatletter
