@@ -40,28 +40,28 @@
 % you are compiling with, and switches the graphicx package options accordingly.
 \usepackage{ifpdf}
 \ifpdf
-  \usepackage[pdftex]{graphicx}
+\usepackage[pdftex]{graphicx}
 \else
-  \usepackage[dvips]{graphicx}
+\usepackage[dvips]{graphicx}
 \fi
 
 % The fancyhdr package allows you to easily customize the page header.
 % The settings below produce a nice, well separated header.
 \usepackage{fancyhdr}
-  \fancyhead{}
-  \fancyhead[LO]{\slshape \rightmark}
-  \fancyhead[RO,LE]{\textbf{\thepage}}
-  \fancyhead[RE]{\slshape \leftmark}
-  \fancyfoot{}
-  \pagestyle{fancy}
-  \renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter \ \ #1}{}}
-  \renewcommand{\sectionmark}[1]{\markright{\thesection \ \ #1}}
+\fancyhead{}
+\fancyhead[LO]{\slshape \rightmark}
+\fancyhead[RO,LE]{\textbf{\thepage}}
+\fancyhead[RE]{\slshape \leftmark}
+\fancyfoot{}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter \ \ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection \ \ #1}}
 
 % The caption package allows us to change the formatting of figure captions.
 % The commands here change to the suggested caption format: single spaced and a bold tag
 \usepackage[margin=0.3in,labelfont=bf,labelsep=none]{caption}
- \DeclareCaptionFormat{suggested}{\singlespace#1#2 #3\par\doublespace}
- \captionsetup{format=suggested}
+\DeclareCaptionFormat{suggested}{\singlespace#1#2 #3\par\doublespace}
+\captionsetup{format=suggested}
 
 % The cite package cleans up the way citations are handled.  For example, it
 % changes the citation [1,2,3,6,7,8,9,10,11] into [1-3,6-11].  If your advisor
@@ -107,118 +107,134 @@
 % To add a bookmark in the pdf you can use \pdfbookmark.  You can look up its usage
 % in the hyperref package documentation
 \usepackage[bookmarksnumbered,pdfpagelabels=true,plainpages=false,colorlinks=true,
-            linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+
+\usepackage{listings}
+\usepackage{color}
+\input{hlcolors.tex}
+%
+% To allow centering of items in tables use the array package
+\usepackage{array}  % for example 1
+% and define new column types.  See the LaTeX tips chapter
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} % for example 1
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}  % for example 1
 
 % ------------------------- Fill in these fields for the preliminary pages ----------------------------
 %
 % For Senior and honors this is the year and month that you submit the thesis
 % For Masters and PhD, this is your graduation date
-  \Year{2021}
-  \Month{January}
-  \Author{Todd Lines}
+\Year{2021}
+\Month{January}
+\Author{Todd Lines}
 
 % If you have a long title, split it between two lines. The \TitleBottom field defines the second line
 % A two line title should be an "inverted pyramid" with the top line longer than the bottom.
 % If you have one line use just \TitleTop. If you have just two lines use \TitleTop and \TitleMiddle
 % If you have three lines use \TitleTop, \TitleMiddle, and \TitleBottom
 % But try to not make your title too long.  If one or two lines can work, use that.
-  \TitleTop{ORBITS AS CONIC SECTIONS SHOWING THAT A DISTANCE}
-  \TitleMiddle{SQUARED LAW GIVES AN ELLIPTICAL ORBIT}
+\TitleTop{ORBITS AS CONIC SECTIONS SHOWING THAT A DISTANCE}
+\TitleMiddle{SQUARED LAW GIVES AN ELLIPTICAL ORBIT}
 %  \TitleBottom{}
 
 % Your research advisor
-  \Advisor{Lance Nelson}
+\Advisor{Lance Nelson}
 
 % Your committee members beyond your advisor
-  \MemberA{Ryan Nielson}
-  \MemberB{Brian Tonks}
-  \ThesisCoordinator{Evan Hansen}
+\MemberA{Ryan Nielson}
+\MemberB{Brian Tonks}
+\ThesisCoordinator{Evan Hansen}
 
 % The representative of the department who will approve your thesis (usually the chair)
-  \DepRep{R. Todd Lines}
+\DepRep{R. Todd Lines}
 
 % The title of the department representative
-  \DepRepTitle{Chair}
+\DepRepTitle{Chair}
 
 
 % The text of your abstract
-  \Abstract{The abstract is a \emph{summary} of the thesis, \emph{not an
-  introduction}. Keep in mind that abstracts are often published
-  separately from the paper they summarize. In your abstract, give a
-  concise synopsis of the work, emphasizing the conclusions; you
-  need not include the supporting arguments for the conclusions. The
-  purpose of the abstract is to help prospective readers decide
-  whether to read your thesis, but your goal is not necessarily to
-  persuade people to read your thesis. In fact, a successful
-  abstract enables people to get an accurate overall view of your
-  work without needing to read it. Usually, an abstract contains a
-  single paragraph, but it can have more if absolutely necessary.
-  Remember to state the subject of the paper immediately followed by
-  a summary of the experimental or theoretical results and the
-  methods used to obtain them. Avoid equations, graphics, and
-  citations; if a citation is essential it must be cited fully
-  within the abstract. Keep the abstract factual. Avoid vague statements
-  like, ``Conclusions are drawn," or ``the significance of the experiment
-  is discussed."  State the conclusions and findings outright in the abstract.}
+\Abstract{The abstract is a \emph{summary} of the thesis, \emph{not an
+		introduction}. Keep in mind that abstracts are often published
+	separately from the paper they summarize. In your abstract, give a
+	concise synopsis of the work, emphasizing the conclusions; you
+	need not include the supporting arguments for the conclusions. The
+	purpose of the abstract is to help prospective readers decide
+	whether to read your thesis, but your goal is not necessarily to
+	persuade people to read your thesis. In fact, a successful
+	abstract enables people to get an accurate overall view of your
+	work without needing to read it. Usually, an abstract contains a
+	single paragraph, but it can have more if absolutely necessary.
+	Remember to state the subject of the paper immediately followed by
+	a summary of the experimental or theoretical results and the
+	methods used to obtain them. Avoid equations, graphics, and
+	citations; if a citation is essential it must be cited fully
+	within the abstract. Keep the abstract factual. Avoid vague statements
+	like, ``Conclusions are drawn," or ``the significance of the experiment
+	is discussed."  State the conclusions and findings outright in the abstract.}
 
 % Acknowledge those who helped and supported you
-  \Acknowledgments{
-    This page is optional. You may acknowledge whom you will---your
-    advisor, colleagues, family members. Please keep acknowledgments
-    in good taste. I would like to acknowledge Dr. Kristine Hansen and Dr.
-    Elizabeth Hedengren, whose Advanced Writing Seminar motivated this project.
-    I also wish to thank Jean-Fran\c{c}ois Van Huele, Steven Turley, and Ross
-    Spencer for reviewing this document and for ripping it to shreds
-    as every good advisor should do to a thesis draft.
-  }
+\Acknowledgments{
+	This page is optional. You may acknowledge whom you will---your
+	advisor, colleagues, family members. Please keep acknowledgments
+	in good taste. I would like to acknowledge Dr. Kristine Hansen and Dr.
+	Elizabeth Hedengren, whose Advanced Writing Seminar motivated this project.
+	I also wish to thank Jean-Fran\c{c}ois Van Huele, Steven Turley, and Ross
+	Spencer for reviewing this document and for ripping it to shreds
+	as every good advisor should do to a thesis draft.
+}
 
 \fussy
 
 \begin{document}
-
- % Start page counting in roman numerals
- \frontmatter
-
- % This command makes the formal preliminary pages.
- % You can comment it out during the drafting process if you want to save paper.
- \makepreliminarypages
-
- \singlespace
-
- % Make the table of contents.
- \tableofcontents
- \clearemptydoublepage
-
- % Make the list of figures
- \listoffigures
- \clearemptydoublepage
-
- \doublespace
-
- % Start regular page counting at page 1
- \mainmatter
-
- %\include{Chapter1}
- %\include{Chapter2}
- %\include{Chapter3}
- 
- \include{orbitchapter}
- \include{numericalcalculation}
- \include{LaTeX_Tips}
- 
-
- \appendix
-
-
- \bibliographystyle{phBYU}
- \bibliography{orbits}
-
- \include{AppendixA}
- \include{AppendixB}
-
-% \phantomsection \addcontentsline{toc}{chapter}{Index}
-  \renewcommand{\baselinestretch}{1} \small \normalsize
-  \printindex
-
-
+	
+	% Start page counting in roman numerals
+	\frontmatter
+	
+	% This command makes the formal preliminary pages.
+	% You can comment it out during the drafting process if you want to save paper.
+	\makepreliminarypages
+	
+	\singlespace
+	
+	% Make the table of contents.
+	\tableofcontents
+	\clearemptydoublepage
+	
+	% Make the list of figures
+	\listoffigures
+	\clearemptydoublepage
+	
+	\doublespace
+	
+	% Start regular page counting at page 1
+	\mainmatter
+	
+	%\include{Chapter1}
+	%\include{Chapter2}
+	%\include{Chapter3}
+	
+	\include{orbitchapter}
+	\include{numericalcalculation}
+	\include{LaTeX_Tips}
+	
+	
+	\appendix
+	
+	
+	\bibliographystyle{phBYU}
+	\bibliography{orbits}
+	
+	\include{AppendixA}
+	\include{AppendixB}
+	
+	% \phantomsection \addcontentsline{toc}{chapter}{Index}
+	\renewcommand{\baselinestretch}{1} \small \normalsize
+	\printindex
+	
+	
 \end{document}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Securit

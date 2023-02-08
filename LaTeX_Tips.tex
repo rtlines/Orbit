@@ -25,16 +25,16 @@ Here is a random numbered list.
 
 \section{Double figures}
 Sometimes it is useful to have two figures side by side. One way to do this is with a minipage environment. Here is an example of doing just that. Notice that I had to adjust the caption sizes to make the figures line up nicely. I used a \verb|\vspace| command to adjust the vertical spacing of the second figure. There are probably more elegant ways of doing this.
-\begin{figure}[!htb]
+
+\begin{figure}[htb!]
 	\centering
-	\begin{minipage}{.5\textwidth}
+	\begin{minipage}{.45\textwidth}
 		\centering
 		\includegraphics[width=0.8\linewidth, height=0.35\textheight]{test60b}
-		\caption{Caption a goes here}
-	     \label{fig:bigsphere1}
-		}
-	\end{minipage}%
-	\begin{minipage}{0.5\textwidth}
+		\caption[short caption A]{A longer caption A}
+	    \label{fig:bigsphere1}
+	\end{minipage} \hfill
+	\begin{minipage}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, height=0.35\textheight]{test70}
 		\caption{Caption b goes here}
@@ -68,5 +68,56 @@ Note that the word ``distance'' doesn't look right. Using the
    \textrm{normal text}
 \end{verbatim}
 command fixes this.
-$$ \frac{x^2+\textrm{distance}^2}{r^2}$$.
+$$ \frac{x^2+\textrm{distance}^2 }{r^2}$$.
+\section{Tables}
+There is a lot to \LaTeX tables. I have more to write on this. But centering can be a difficulty.  Here are examples of doing that.
+
+Example 1
+Use the array package and define a new column type with horizontal or vertical centering (or both).  
+
+\begin{verbatim}
+	\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\end{verbatim} line above. Then in the column definitions in your table replace  the ``p'' with an ``M.'' 
+\begin{table}[h]
+	\centering
+	\begin{tabular}[c]{|M{2.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|} \hline
+		Samples & \multicolumn{2}{|c|}{Data Item 1} & \multicolumn{2}{|c|}{Data Item 2} & \multicolumn{2}{|c|}{Data Item 3}\\ \hline
+		Lifetime ($\tau$)     & 1     & 2     & 1     & 2     & 1     & 2     \\ \hline
+		Average Lifetime (ps) & 116.5 & 464.2 & 114.7 & 404.7 & 115.3 & 414.7 \\ \hline
+		Intensity (\%)        & 69    & 31    & 64.5  & 35.5  & 66.2  & 33.8  \\ \hline
+	\end{tabular}
+	\caption{This is the table caption}
+	\label{OpenResults}
+\end{table}
+
+Example 2:
+I use this one a lot.  Just put \textbackslash hfil  in each cell you want centered.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}[c]{|p{2.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|} \hline
+			Samples & \multicolumn{2}{|c|}{Data Item 1} & \multicolumn{2}{|c|}{Data Item 2} & \multicolumn{2}{|c|}{Data Item 3}\\ \hline
+		Lifetime ($\tau$)     & \hfil 1     & \hfil 2     & \hfil 1     & \hfil 2     & \hfil 1     & \hfil 2 \\  \hline
+		Average Lifetime (ps) & \hfil 116.5 & \hfil 464.2 & \hfil 114.7 & \hfil 404.7 & \hfil 115.3 & \hfil 414.7 \\ \hline
+		Intensity (\%)        & \hfil 69    & \hfil 31    & \hfil 64.5  & \hfil 35.5  & \hfil 66.2  & \hfil 33.8 \\ \hline
+	\end{tabular}
+	\caption{This is the table caption}
+	\label{OpenResults}
+\end{table}
+
+Example 3:
+The last example was a trick.  Maybe a ``better'' way to go is to put \textbackslash centering in the cells you want centered.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}[c]{|p{2.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|} \hline
+		Samples & \multicolumn{2}{|c|}{Data Item 1} & \multicolumn{2}{|c|}{Data Item 2} & \multicolumn{2}{|c|}{Data Item 3}\\ \hline
+		Lifetime ($\tau$)      & 1     & 2     & 1     & 2     & 1     & 2     \\  \hline
+		Average Lifetime (ps)  & 116.5 & 464.2 & 114.7 & 404.7 & 115.3 & 414.7 \\  \hline
+		Intensity (\%)         & 69    & 31    & 64.5  & 35.5  & 66.2  & 33.8  \\  \hline
+	\end{tabular}
+	\caption{This is the table caption}
+	\label{OpenResults}
+\end{table}
+
 
