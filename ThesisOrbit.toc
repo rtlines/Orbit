@@ -1,0 +1,17 @@
+\contentsline {chapter}{Table of Contents}{viii}{section*.1}%
+\contentsline {chapter}{List of Figures}{ix}{section*.3}%
+\contentsline {chapter}{\numberline {1}Orbits}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Elliptical orbits}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Conservation of Orbital Mechanical Energy}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Conservation of Orbital Angular Momentum}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Conic Section Equation}{8}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Numerical Verification of the Orbit Equation}{14}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Long Quotations}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Chemical Equations in \LaTeX }{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Long Section Names}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Double figures}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}defining new math operators}{18}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Tables}{19}{section.3.5}%
+\contentsline {chapter}{Bibliography}{21}{section*.11}%
+\contentsline {chapter}{\numberline {A}Things that belong in an appendix}{22}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Including Your Code}{23}{appendix.B}%
