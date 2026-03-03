@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.27)  10 FEB 2026 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.27)  3 MAR 2026 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,10 +586,10 @@ Package fancyhdr Warning: \headheight is too small (9.03374pt):
  (./orbitchapter.tex
 Chapter 1.
 Package epstopdf Info: Source file: <orbit_figure.eps>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 152362 bytes
 (epstopdf)             Output file: <orbit_figure-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 82046 bytes
 (epstopdf)             Command: <repstopdf --outfile=orbit_figure-eps-converted
 -to.pdf orbit_figure.eps>
@@ -602,10 +602,10 @@ Package pdftex.def Info: orbit_figure-eps-converted-to.pdf  used on input line
 8.
 (pdftex.def)             Requested size: 130.08731pt x 116.3671pt.
 Package epstopdf Info: Source file: <cat.eps>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 2056705 bytes
 (epstopdf)             Output file: <cat-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 24221 bytes
 (epstopdf)             Command: <repstopdf --outfile=cat-eps-converted-to.pdf c
 at.eps>
@@ -770,10 +770,10 @@ Package fancyhdr Warning: \headheight is too small (9.03374pt):
 
 [16]
 Package epstopdf Info: Source file: <test60b.eps>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 1053654 bytes
 (epstopdf)             Output file: <test60b-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 15876 bytes
 (epstopdf)             Command: <repstopdf --outfile=test60b-eps-converted-to.p
 df test60b.eps>
@@ -785,10 +785,10 @@ File: test60b-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: test60b-eps-converted-to.pdf  used on input line 33.
 (pdftex.def)             Requested size: 156.08595pt x 218.15393pt.
 Package epstopdf Info: Source file: <test70.eps>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 1050962 bytes
 (epstopdf)             Output file: <test70-eps-converted-to.pdf>
-(epstopdf)                    date: 2023-10-31 13:12:18
+(epstopdf)                    date: 2026-03-03 13:40:23
 (epstopdf)                    size: 17217 bytes
 (epstopdf)             Command: <repstopdf --outfile=test70-eps-converted-to.pd
 f test70.eps>
@@ -993,7 +993,7 @@ Package rerunfilecheck Info: File `ThesisOrbit.out' has not changed.
 Here is how much of TeX's memory you used:
  14792 strings out of 473190
  238846 string characters out of 5719973
- 1041865 words of memory out of 5000000
+ 1041863 words of memory out of 5000000
  37624 multiletter control sequences out of 15000+600000
  566965 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1013,7 +1013,7 @@ ist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2025/texmf-dist/fonts
 blic/amsfonts/cm/cmtt12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-s
 uper/sfrm1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1
 200.pfb>
-Output written on ThesisOrbit.pdf (41 pages, 391992 bytes).
+Output written on ThesisOrbit.pdf (41 pages, 391996 bytes).
 PDF statistics:
  585 PDF objects out of 1000 (max. 8388607)
  494 compressed objects within 5 object streams
